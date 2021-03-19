@@ -1,0 +1,20 @@
+from vet.models import PetOwner
+
+PetOwner.objects.create(first_name="Ale" , last_name="Paez", address= "Calle camarones", email = "ale.paez@camarones.mx", phone= "52 555 222 222")
+
+PetOwner.objects.create(first_name="Andre" , last_name="Vazquez", address= "Calle Navarrete", email = "andre.vazquez@camarones.mx", phone= "52 123 456 789")
+
+
+PetOwner.objects.create(first_name="David" , last_name="Moranchel", address= "Calle Kodemia", email = "david@camarones.mx", phone= "52 555 222 1234 ")
+
+
+from vet.models import Pet
+
+
+Pet.objects.create(name="michu", type="cat", owner_id=1)
+Pet.objects.create(name="Azul", type="cat", owner_id=2)
+Pet.objects.create(name="Peny", type="dog", owner_id=3)
+
+
+
+
